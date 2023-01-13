@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Encriptador de texto</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <img src="imagenes/Logo.png" alt="logo" id="logo" />
+    </header>
+    <main class="main">
+        <div class="contenedor-input">
+            <p id="textarea">Ingrese el texto aquí</p>
+            <textarea name="textarea"cols="30" rows="10"  id="textInput"></textarea>
+            
+        </div>
+      
+      <div class="contenedor-nota">
+        <img src="/imagenes/Group (1).png" alt="">
+        <p>Solo letras minúsculas y sin acento</p>
+      </div>
+      <div class="contenedor-buttom">
+        <button type="submit" class="buttom" id="buttomEncriptar" onclick="encriptar()">Encriptar</button>
+        <button type="submit" class="buttom" id="buttomDesencriptar"  onclick="desencriptar()">Desencriptar</button>
+      </div>
+    </main>
+    <aside class="aside">
+     <div class="contenedor-muñeco" id="contenedorMuñeco">
+        <img src="/imagenes/Muñeco.png" alt="muñeco" class="muñeco">
+     </div>
+     <div class="contenedor-texto" id="contenedorTexto" >
+        <p class="texto" id="texto"> wssdssdsdsdsdsd</p>
+        <button id="copy" onclick="copy()">Copiar</button>
+     </div>
+    </aside>
+
+    <footer>Creado por <strong>Lidianys Rodríguez Díaz</strong>. Todos los derechos reservados.</footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>
